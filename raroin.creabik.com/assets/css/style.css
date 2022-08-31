@@ -9,8 +9,16 @@
 =============================================== */
 /* ===================
 - 1/ CSS Basic classes
-=======================*/
 
+=======================*/
+.top_margin{
+  margin: 15px 0;
+}
+.header_top_margin{
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 13 !important; 
+}
 textarea{
   resize: none;
 }

@@ -12,7 +12,7 @@
 		<meta name="robots" content="index, follow" />
 		<meta name="language" content="English" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> - item </title>
+		<title> - requests </title>
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 		<!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 STYLES -->
@@ -30,7 +30,6 @@
 	<body class="body">
 
 		<div class="overflow-hidden">
-
 			<div class="bg-dark py-10">
 				<div class="container">
 					<div
@@ -637,305 +636,97 @@
 					</div>
 				</div>
 			</header>
-			<div class="modal fade popup" id="popup_bid_success" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			                <h3 class="text-center">Your Bidding
-			                    Successfuly Added</h3>
-			                <p class="text-center">your bid <span class="color_text txt
-			                        _bold">(16ETH) </span> has been listing
-			                    to our database</p>
+			<div class="requests">
+			    <div class="container">
+			        <div class="row gx-5 justify-content-center">
 			
-			                <a href="Item-details.html" class="btn btn-dark w-full"> Watch the listings</a>
+			            <div class="col-lg-8 col-md-10 requests__content">
+			                <div class="requests__wrap space-y-20">
+			                    <div>
+			                        <h1 class="text-left">Добавить объявление</h1>
+			                    </div>
+			                    <div class="box is__big">
+			                        <div class="space-y-20 mb-0">
+			                            <div class="space-y-10">
+			                                <span class="nameInput">Ваш email</span>
+			                                <input type="email" class="form-control"
+			                                    placeholder="example@gmail.com">
+			                            </div>
+			                            <div class="space-y-10">
+			                                <span class="nameInput">Ваш номер телефона</span>
+			                                <input type="text" class="form-control">
+			                            </div>
+			                            <div class="space-y-10">
+			                                <span class="nameInput">Описание</span>
+			                                <textarea style="min-height: 110px"
+			                                    class="mb-0">
+			                                </textarea>
+			                            </div>
+			                            <div class="space-y-10">
+			                                <span class="nameInput">Категория</span>
+			                                <select class="form-select
+			                                    custom-select" aria-label="Default
+			                                    select example">
+			                                    <option>Что то</option>
+			                                    <option>Музыка</option>
+			                                    <option>говно</option>
+			
+			                                </select>
+			                            </div>
+										<div class="space-y-10">
+			                                <span class="nameInput">Локация</span>
+			                                <select class="form-select
+			                                    custom-select" aria-label="Default
+			                                    select example">
+			                                    <option>Ощ</option>
+			                                    <option>Кызыл-кия</option>
+			                                    <option>Кара-суу</option>
+			
+			                                </select>
+			                            </div>
+			                            <div class="requests_footer">
+			                                <div>
+			                                    <a href="request.html" class="btn
+			                                        btn-grad">Добавить</a>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="col-lg-4 contact__img">
+			                <div class="img__wrap">
+			                    <img src="assets/img/bg/requests.png" alt="">
+			                </div>
 			            </div>
 			        </div>
 			    </div>
-			</div>
-			<div class="modal fade popup" id="popup_bid" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			                <h3>Place a Bid</h3>
-			                <p>You must bid at least <span class="color_black">15 ETH</span>
-			                </p>
-			                <input type="text" class="form-control"
-			                    placeholder="00.00 ETH">
 			
-			                <p>Enter quantity. <span class="color_green">5 available</span>
-			                </p>
-			                <input type="text" class="form-control"
-			                    value="1">
-			                <div class="hr"></div>
-			                <div class="d-flex justify-content-between">
-			                    <p> You must bid at least:</p>
-			                    <p class="text-right color_black txt _bold"> 67,000 ETH </p>
-			                </div>
-			                <div class="d-flex justify-content-between">
-			                    <p> service free:</p>
-			                    <p class="text-right color_black txt _bold"> 0,901 ETH </p>
-			                </div>
-			                <div class="d-flex justify-content-between">
-			                    <p> Total bid amount:</p>
-			                    <p class="text-right color_black txt _bold"> 56,031 ETH </p>
-			                </div>
-			                <a href="Item-details.html" class="btn btn-primary w-full"
-			                    data-toggle="modal"
-			                    data-target="#popup_bid_success"
-			                    data-dismiss="modal"
-			                    aria-label="Close"> Place a bid</a>
-			            </div>
-			        </div>
-			    </div>
-			</div><div class="modal fade popup" id="popup_bid_success" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			                <h3 class="text-center">Your Bidding
-			                    Successfuly Added</h3>
-			                <p class="text-center">your bid <span class="color_text txt
-			                        _bold">(16ETH) </span> has been listing
-			                    to our database</p>
-			
-			                <a href="Item-details.html" class="btn btn-dark w-full"> Watch the listings</a>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-			<div class="modal fade popup" id="popup_buy" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			                <h3>Checkout
-			                </h3>
-			                <p>You are about to purchase a <span class="color_black">SHADOW
-			                        #7</span> from
-			                    <span class="color_black">Lona</span>
-			                </p>
-			                <div class="space-y-10">
-			                    <p>You pay
-			                    </p>
-			                    <input type="text" class="form-control"
-			                        placeholder="00.00 ETH">
-			                </div>
-			                <div class="space-y-10">
-			                    <p>Enter quantity. <span class="color_green">5 available</span>
-			                    </p>
-			                    <input type="text" class="form-control"
-			                        value="1">
-			                </div>
-			
-			                <div class="hr"></div>
-			                <div class="d-flex justify-content-between">
-			                    <p> You must bid at least:</p>
-			                    <p class="text-right color_black txt _bold"> 67,000 ETH </p>
-			                </div>
-			                <div class="d-flex justify-content-between">
-			                    <p> service free:</p>
-			                    <p class="text-right color_black txt _bold"> 0,901 ETH </p>
-			                </div>
-			                <div class="d-flex justify-content-between">
-			                    <p> Total bid amount:</p>
-			                    <p class="text-right color_black txt _bold"> 56,031 ETH </p>
-			                </div>
-			                <a href="https://pay.sendwyre.com/" class="btn btn-primary
-			                    w-full" aria-label="Close">
-			                    Add funds</a>
-			            </div>
-			        </div>
-			    </div>
-			</div><div class="modal fade popup" id="popup_bid_success" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			                <h3 class="text-center">Your Bidding
-			                    Successfuly Added</h3>
-			                <p class="text-center">your bid <span class="color_text txt
-			                        _bold">(16ETH) </span> has been listing
-			                    to our database</p>
-			
-			                <a href="Item-details.html" class="btn btn-dark w-full"> Watch the listings</a>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-			<div class="modal fade popup" id="popup_report" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			
-			                <h3>Report this item</h3>
-			                <div class="hr"></div>
-			                <div class="form-group space-y-10">
-			                    <span class="variationInput">reason:</span>
-			                    <select class="form-select custom-select"
-			                        aria-label="Default select example">
-			                        <option> Select a reason</option>
-			                        <option>Purchase</option>
-			                        <option>Support</option>
-			                        <option>Technique</option>
-			                        <option>Service Request</option>
-			                    </select>
-			                </div>
-			                <div class="form-group space-y-10">
-			                    <span class="variationInput">Additional comments:</span>
-			                    <textarea name="..." cols="30" rows="10"
-			                        placeholder="Explain why you are concerned about it."></textarea>
-			                </div>
-			                <a href="Item-details.html" class="btn btn-dark"> Report</a>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-			
-			
-			<div class="container">
-				<a href="index.html" class="btn btn-white btn-sm my-40">
-					Назад на главную
-				</a>
-				<div class="item_details">
-					<div class="row sm:space-y-20">
-						<div class="col-lg-6">
-							<img class="item_img" src="assets/img/items/item_2.png"
-								alt="">
-						</div>
-						<div class="col-lg-6">
-							<div class="space-y-20">
-								<h3>Kurmanbek</h3>
-								<div class="d-flex justify-content-between">
-									<div class="space-x-10 d-flex align-items-center">
-										<p>Имя пользователя: Оссо Kurmanbek stroy</p>
-									</div>
-									<!-- <div class="space-x-10 d-flex align-items-center">
-										<div class="more">
-											<div class="icon">
-												<a href="Item-details.html#"> <i class="ri-more-fill"></i>
-												</a>
-											</div>
-											 <div class="dropdown__popup">
-												<ul class="space-y-10">
-													<li>
-														<a href="Item-details.html#" class="space-x-10
-															d-flex"
-															data-toggle="modal"
-															data-target="#popup_report">
-															<i class="ri-flag-line"></i>
-															<span> Report
-															</span>
-														</a>
-													</li>
-												</ul>
-											</div> 
-										</div>
-									</div> -->
-								</div>
-								<div class="box">
-									<div class="space-y-20">
-										<div class="tab-content">
-											<div class="tab-pane active" id="tabs-1"
-												role="tabpanel">
-												<p><span class="txt txt_sm_bold color_black">Описание: </span> Здравствуйте меня Курманбек, middle Python devoloper, работаю учителем в It-Run academy Здравствуйте меня Курманбек, middle Python devoloper, работаю учителем в It-Run academy Здравствуйте меня Курманбек, middle Python devoloper, работаю учителем в It-Run academy</p>
-												<p>
-												<span class="txt txt_sm_bold color_black">Категория: </span>Програмист
-												</p>
-												<p>
-												<span class="txt txt_sm_bold color_black">Локация: </span>Ош
-												</p>
-												<p>
-												<span class="txt txt_sm_bold color_black">Email: </span>kurmanbel@gmail.com
-												</p>
-												<p>
-												<span class="txt txt_sm_bold color_black">Контакты: </span>+996778123321
-												</p>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="hr2"></div>
-								<div class="d-flex space-x-20">
-									<a href="edit_profile.html" class="btn btn-primary btn-lg" >Изменить профиль </a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mb-50 top_margin">
-					<h3 class="mb-30">Фото/Видео</h3>
-					<div class="row profile-img display-flex">
-						<div class="col-2 ">
-							<div class="">
-								<img src="assets/img/bg/cover_active.png" alt="">
-							</div>
-						</div>
-						<div class="col-2">
-							<div class="">
-								<img src="assets/img/bg/edit1.png" alt="">
-							</div>
-						</div>
-						<div class="col-2">
-							<div class="">
-								<img src="assets/img/bg/edit1.png" alt="">
-							</div>
-						</div>
-		
-					</div>
-				</div>
 			</div>
 			<footer class="footer__1">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 space-y-20">
 							<div class="footer__logo">
-								<a href="index.html">
-									<img src="assets/img/logos/Logo.svg" alt="logo" id="logo_js_f">
+								<a class="h4_09" href="index.html">
+									Kyzmat24
 								</a>
 							</div>
 							<p class="footer__text">
-								raroin is a shared liquidity NFT market smart contract
+								Kyzmat24 - это плотформа для поиска работы или сотрудника
 							</p>
-							<div>
+							 <div>
 								<ul class="footer__social space-x-10 mb-40">
-									<li> <a href="Item-details.html"> <i class="ri-facebook-line"></i> </a>
+									<li> <a href="Home1.html"> <i class="ri-facebook-line"></i> </a>
 									</li>
-									<li> <a href="Item-details.html"> <i class="ri-messenger-line"></i> </a>
+									<li> <a href="Home1.html"> <i class="ri-messenger-line"></i> </a>
 									</li>
-									<li> <a href="Item-details.html"> <i class="ri-whatsapp-line"></i> </a>
+									<li> <a href="Home1.html"> <i class="ri-whatsapp-line"></i> </a>
 									</li>
-									<li> <a href="Item-details.html"> <i class="ri-youtube-line"></i> </a>
+									<li> <a href="Home1.html"> <i class="ri-youtube-line"></i> </a>
 									</li>
 								</ul>
-							</div>
+							</div> <!-- 
 						</div>
 						<div class="col-lg-2 col-6">
 							<h6 class="footer__title">Raroin</h6>
@@ -974,13 +765,13 @@
 								<li> <a href="Item-details.html"> Item details </a>
 								</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 					<p class="copyright text-center">
-						Copyright © 2021. Created with love by creabik.
+						Copyright © 2022. Created with love by Bezbak, Kubanych, Kurmanbek.
 					</p>
 				</div>
-			</footer>		</div>
+			</footer>	</div>
 		<!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 SCRIPTS -->
 		<script src="assets/js/jquery-3.6.0.js"></script>
 		<script src="assets/js/bootstrap.bundle.min.js"></script>

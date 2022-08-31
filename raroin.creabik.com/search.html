@@ -12,7 +12,7 @@
 		<meta name="robots" content="index, follow" />
 		<meta name="language" content="English" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> - item </title>
+		<title> - No results found </title>
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 		<!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 STYLES -->
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 
-			<header class="header__1 js-header" id="header">
+			<header class="header__1 js-header header_top_margin"  id="header">
 				<div class="container">
 					<div class="wrapper js-header-wrapper">
 						<div class="header__logo">
@@ -90,7 +90,10 @@
 									<a class="color_black" href="Profile.html"> О нас</a>
 								</li>
 								<li>
-									<a class="color_black" href="Creators.html"> Отзывы</a>
+									<a class="color_black" href="otzyv.html"> Отзывы</a>
+								</li>
+								<li>
+									<a class="color_black" href="#">Поиск</a>
 								</li>
 								<li class="has_popup2">
 									<a class="color_black" href="#">Категории <i class="ri-more-2-fill"></i></a>
@@ -267,12 +270,7 @@
 							</ul>
 						</div>
 						<!-- ================= -->
-						<div class="header__search">
-							<input type="text" placeholder="Поиск" />
-							<button class="header__result">
-								<i class="ri-search-line"></i>
-							</button>
-						</div>
+						
 						<div class="header__btns">
 							<a class="btn btn-grad btn-sm" href="register.html">
 								<img width="30" src="assets/img/icons/metamask.svg" alt="">
@@ -306,7 +304,7 @@
 			</header>
 			
 			<!-- ====== headers -->
-			<header class="header__1 js-header header_wallet" id="header_admin">
+			<header class="header__1 js-header header_wallet " id="header_admin">
 				<div class="container">
 					<div class="wrapper js-header-wrapper space-x-10">
 						<div class="header__logo">
@@ -636,7 +634,19 @@
 						</div>
 					</div>
 				</div>
-			</header>
+			</header><div class="hero_no_results">
+			    <div class="container">
+			        <div class="space-y-20">
+			            <div class="box search__box">
+			                <i class="ri-search-line"></i>
+			            </div>
+			            <div class="box input__box d-flex align-items-center space-x-20">
+			                <input type="text" class="form-control" placeholder="Что ищем?">
+			                <div><a href="no_results.html#" class="btn btn-grad"><i class="ri-search-line"></i>Search</a></div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
 			<div class="modal fade popup" id="popup_bid_success" tabindex="-1" role="dialog"
 			    aria-hidden="true">
 			    <div class="modal-dialog modal-dialog-centered" role="document">
@@ -652,7 +662,7 @@
 			                        _bold">(16ETH) </span> has been listing
 			                    to our database</p>
 			
-			                <a href="Item-details.html" class="btn btn-dark w-full"> Watch the listings</a>
+			                <a href="no_results.html" class="btn btn-dark w-full"> Watch the listings</a>
 			            </div>
 			        </div>
 			    </div>
@@ -689,7 +699,7 @@
 			                    <p> Total bid amount:</p>
 			                    <p class="text-right color_black txt _bold"> 56,031 ETH </p>
 			                </div>
-			                <a href="Item-details.html" class="btn btn-primary w-full"
+			                <a href="no_results.html" class="btn btn-primary w-full"
 			                    data-toggle="modal"
 			                    data-target="#popup_bid_success"
 			                    data-dismiss="modal"
@@ -697,218 +707,509 @@
 			            </div>
 			        </div>
 			    </div>
-			</div><div class="modal fade popup" id="popup_bid_success" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			                <h3 class="text-center">Your Bidding
-			                    Successfuly Added</h3>
-			                <p class="text-center">your bid <span class="color_text txt
-			                        _bold">(16ETH) </span> has been listing
-			                    to our database</p>
-			
-			                <a href="Item-details.html" class="btn btn-dark w-full"> Watch the listings</a>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-			<div class="modal fade popup" id="popup_buy" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			                <h3>Checkout
-			                </h3>
-			                <p>You are about to purchase a <span class="color_black">SHADOW
-			                        #7</span> from
-			                    <span class="color_black">Lona</span>
-			                </p>
-			                <div class="space-y-10">
-			                    <p>You pay
-			                    </p>
-			                    <input type="text" class="form-control"
-			                        placeholder="00.00 ETH">
-			                </div>
-			                <div class="space-y-10">
-			                    <p>Enter quantity. <span class="color_green">5 available</span>
-			                    </p>
-			                    <input type="text" class="form-control"
-			                        value="1">
-			                </div>
-			
-			                <div class="hr"></div>
-			                <div class="d-flex justify-content-between">
-			                    <p> You must bid at least:</p>
-			                    <p class="text-right color_black txt _bold"> 67,000 ETH </p>
-			                </div>
-			                <div class="d-flex justify-content-between">
-			                    <p> service free:</p>
-			                    <p class="text-right color_black txt _bold"> 0,901 ETH </p>
-			                </div>
-			                <div class="d-flex justify-content-between">
-			                    <p> Total bid amount:</p>
-			                    <p class="text-right color_black txt _bold"> 56,031 ETH </p>
-			                </div>
-			                <a href="https://pay.sendwyre.com/" class="btn btn-primary
-			                    w-full" aria-label="Close">
-			                    Add funds</a>
-			            </div>
-			        </div>
-			    </div>
-			</div><div class="modal fade popup" id="popup_bid_success" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			                <h3 class="text-center">Your Bidding
-			                    Successfuly Added</h3>
-			                <p class="text-center">your bid <span class="color_text txt
-			                        _bold">(16ETH) </span> has been listing
-			                    to our database</p>
-			
-			                <a href="Item-details.html" class="btn btn-dark w-full"> Watch the listings</a>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-			<div class="modal fade popup" id="popup_report" tabindex="-1" role="dialog"
-			    aria-hidden="true">
-			    <div class="modal-dialog modal-dialog-centered" role="document">
-			        <div class="modal-content">
-			            <button type="button" class="close" data-dismiss="modal"
-			                aria-label="Close">
-			                <span aria-hidden="true">&times;</span>
-			            </button>
-			            <div class="modal-body space-y-20 p-40">
-			
-			                <h3>Report this item</h3>
-			                <div class="hr"></div>
-			                <div class="form-group space-y-10">
-			                    <span class="variationInput">reason:</span>
-			                    <select class="form-select custom-select"
-			                        aria-label="Default select example">
-			                        <option> Select a reason</option>
-			                        <option>Purchase</option>
-			                        <option>Support</option>
-			                        <option>Technique</option>
-			                        <option>Service Request</option>
-			                    </select>
-			                </div>
-			                <div class="form-group space-y-10">
-			                    <span class="variationInput">Additional comments:</span>
-			                    <textarea name="..." cols="30" rows="10"
-			                        placeholder="Explain why you are concerned about it."></textarea>
-			                </div>
-			                <a href="Item-details.html" class="btn btn-dark"> Report</a>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-			
-			
-			<div class="container">
-				<a href="index.html" class="btn btn-white btn-sm my-40">
-					Назад на главную
-				</a>
-				<div class="item_details">
-					<div class="row sm:space-y-20">
-						<div class="col-lg-6">
-							<img class="item_img" src="assets/img/items/item_2.png"
-								alt="">
-						</div>
-						<div class="col-lg-6">
-							<div class="space-y-20">
-								<h3>Kurmanbek</h3>
-								<div class="d-flex justify-content-between">
-									<div class="space-x-10 d-flex align-items-center">
-										<p>Имя пользователя: Оссо Kurmanbek stroy</p>
+			</div><div class="modal fade popup" id="popup_history" tabindex="-1" role="dialog"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="modal-body space-y-20 p-40">
+							<h4> History </h4>
+							<div class="creator_item creator_card space-x-10">
+								<div class="avatars space-x-10">
+									<div class="media">
+										<div class="badge">
+											<img src="assets/img/icons/Badge.svg"
+												alt="">
+										</div>
+										<a href="Profile.html">
+											<img
+												src="assets/img/avatars/avatar_1.png"
+												alt="Avatar"
+												class="avatar avatar-md">
+										</a>
 									</div>
-									<!-- <div class="space-x-10 d-flex align-items-center">
-										<div class="more">
-											<div class="icon">
-												<a href="Item-details.html#"> <i class="ri-more-fill"></i>
-												</a>
-											</div>
-											 <div class="dropdown__popup">
-												<ul class="space-y-10">
-													<li>
-														<a href="Item-details.html#" class="space-x-10
-															d-flex"
-															data-toggle="modal"
-															data-target="#popup_report">
-															<i class="ri-flag-line"></i>
-															<span> Report
-															</span>
-														</a>
-													</li>
-												</ul>
-											</div> 
-										</div>
-									</div> -->
-								</div>
-								<div class="box">
-									<div class="space-y-20">
-										<div class="tab-content">
-											<div class="tab-pane active" id="tabs-1"
-												role="tabpanel">
-												<p><span class="txt txt_sm_bold color_black">Описание: </span> Здравствуйте меня Курманбек, middle Python devoloper, работаю учителем в It-Run academy Здравствуйте меня Курманбек, middle Python devoloper, работаю учителем в It-Run academy Здравствуйте меня Курманбек, middle Python devoloper, работаю учителем в It-Run academy</p>
-												<p>
-												<span class="txt txt_sm_bold color_black">Категория: </span>Програмист
-												</p>
-												<p>
-												<span class="txt txt_sm_bold color_black">Локация: </span>Ош
-												</p>
-												<p>
-												<span class="txt txt_sm_bold color_black">Email: </span>kurmanbel@gmail.com
-												</p>
-												<p>
-												<span class="txt txt_sm_bold color_black">Контакты: </span>+996778123321
-												</p>
-											</div>
-											
-										</div>
+									<div>
+										<p class="color_black">Bid accepted <span
+												class="color_brand">1
+												ETH</span> by <a class="color_black txt
+												_bold"
+												href="Profile.html">ayoub</a></p>
+										<span class="date color_text">28/06/2021, 12:08</span>
 									</div>
 								</div>
-								<div class="hr2"></div>
-								<div class="d-flex space-x-20">
-									<a href="edit_profile.html" class="btn btn-primary btn-lg" >Изменить профиль </a>
+							</div>
+							<div class="creator_item creator_card space-x-10">
+								<div class="avatars space-x-10">
+									<div class="media">
+										<div class="badge">
+											<img src="assets/img/icons/Badge.svg"
+												alt="">
+										</div>
+										<a href="Profile.html">
+											<img
+												src="assets/img/avatars/avatar_2.png"
+												alt="Avatar"
+												class="avatar avatar-md">
+										</a>
+									</div>
+									<div>
+										<p class="color_black">Bid accepted <span
+												class="color_brand">3
+												ETH</span> by <a class="color_black txt
+												_bold"
+												href="Profile.html">monir</a></p>
+										<span class="date color_text">22/05/2021, 12:08</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="mb-50 top_margin">
-					<h3 class="mb-30">Фото/Видео</h3>
-					<div class="row profile-img display-flex">
-						<div class="col-2 ">
-							<div class="">
-								<img src="assets/img/bg/cover_active.png" alt="">
+			</div>
+			<div class="mt-100">
+				<div class="container">
+					<div class="section__head">
+						<div class="d-md-flex
+							sm:space-y-20
+							space-x-20
+							justify-content-between
+							align-items-center">
+							<h2 class="section__title text-center">Резюме</h2>
+							<ul class="menu_categories space-x-20">
+							    <li>
+							        <a href="Home1.html#" class="color_brand">
+							
+							            <span> Все </span>
+							        </a>
+							    </li>
+							    <li> <a href="Home1.html#">
+							            <i class="ri-gamepad-line"></i> <span> Категория </span>
+							        </a>
+							
+							    </li>
+							    <li> <a href="Home1.html#">
+							            <i class="ri-brush-line"></i> <span> Категория </span>
+							        </a>
+							
+							    </li>
+							    <li> <a href="Home1.html#">
+							            <i class="ri-stock-line"></i> <span> Категория </span>
+							        </a>
+							
+							    </li>
+							    <li> <a href="Home1.html#">
+							            <i class="ri-music-line"></i> <span> Категория </span>
+							        </a>
+							
+							    </li>
+							    <li> <a href="Home1.html#">
+							            <i class="ri-global-line"></i> <span> Категория</span>
+							        </a>
+							
+							    </li>
+							    <li> <a href="Home1.html#">
+							            <i class="ri-emotion-laugh-line"></i> <span> Категория </span>
+							        </a>
+							
+							    </li>
+							    <li> <a href="Home1.html#">
+							            <i class="ri-layout-4-line"></i> <span> Категория </span>
+							        </a>
+							
+							    </li>
+							</ul>				
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+							<div class="card__item four">
+								<div class="card_body space-y-10">
+									<!-- =============== -->
+									<div class="card_head">
+										<a href="Item-details.html">
+											<img src="assets/img/items/item_1.png" alt="item
+												img">
+										</a>
+									</div>
+									<!-- =============== -->
+			
+									<h6 class="card_title">
+										<a class="color_black" href="Item-details.html">
+											Toktorov Kurmanbek
+										</a>
+									</h6>
+									<div class="card_footer d-block space-y-10">
+										<div class="card_footer justify-content-between">
+											<div class="creators">
+												<p class="txt_sm">Python devoloper</p>
+											</div>
+											<a href="Home1.html#" class="">
+												<p class="txt_sm">
+													Geo: <span class="color_green txt_sm">Osh</span>
+												</p>
+											</a>
+										</div>
+										<div class="hr"></div>
+										<div class="d-flex
+											align-items-center
+											space-x-10
+											justify-content-between">
+											<div class="d-flex align-items-center
+												space-x-5">
+												<a href="Home1.html#" data-toggle="modal" data-target="#popup_history">
+													<p class="color_text txt_sm
+														view_history" style="width:
+														auto">
+														Devoloper
+													</p>
+												</a>
+											</div>
+											<a class="btn btn-sm btn-primary" href="Home1.html#" data-toggle="modal" data-target="#popup_bid">Посмотреть</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-2">
-							<div class="">
-								<img src="assets/img/bg/edit1.png" alt="">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+							<div class="card__item four">
+								<div class="card_body space-y-10">
+									<!-- =============== -->
+									<div class="card_head">
+										<a href="Item-details.html">
+											<img src="assets/img/items/item_1.png" alt="item
+												img">
+										</a>
+									</div>
+									<!-- =============== -->
+			
+									<h6 class="card_title">
+										<a class="color_black" href="Item-details.html">
+											Toktorov Kurmanbek
+										</a>
+									</h6>
+									<div class="card_footer d-block space-y-10">
+										<div class="card_footer justify-content-between">
+											<div class="creators">
+												<p class="txt_sm">Python devoloper</p>
+											</div>
+											<a href="Home1.html#" class="">
+												<p class="txt_sm">
+													Geo: <span class="color_green txt_sm">Osh</span>
+												</p>
+											</a>
+										</div>
+										<div class="hr"></div>
+										<div class="d-flex
+											align-items-center
+											space-x-10
+											justify-content-between">
+											<div class="d-flex align-items-center
+												space-x-5">
+												<a href="Home1.html#" data-toggle="modal" data-target="#popup_history">
+													<p class="color_text txt_sm
+														view_history" style="width:
+														auto">
+														Devoloper
+													</p>
+												</a>
+											</div>
+											<a class="btn btn-sm btn-primary" href="Home1.html#" data-toggle="modal" data-target="#popup_bid">Посмотреть</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+							<div class="card__item four">
+								<div class="card_body space-y-10">
+									<!-- =============== -->
+									<div class="card_head">
+										<a href="Item-details.html">
+											<img src="assets/img/items/item_1.png" alt="item
+												img">
+										</a>
+									</div>
+									<!-- =============== -->
+			
+									<h6 class="card_title">
+										<a class="color_black" href="Item-details.html">
+											Toktorov Kurmanbek
+										</a>
+									</h6>
+									<div class="card_footer d-block space-y-10">
+										<div class="card_footer justify-content-between">
+											<div class="creators">
+												<p class="txt_sm">Python devoloper</p>
+											</div>
+											<a href="Home1.html#" class="">
+												<p class="txt_sm">
+													Geo: <span class="color_green txt_sm">Osh</span>
+												</p>
+											</a>
+										</div>
+										<div class="hr"></div>
+										<div class="d-flex
+											align-items-center
+											space-x-10
+											justify-content-between">
+											<div class="d-flex align-items-center
+												space-x-5">
+												<a href="Home1.html#" data-toggle="modal" data-target="#popup_history">
+													<p class="color_text txt_sm
+														view_history" style="width:
+														auto">
+														Devoloper
+													</p>
+												</a>
+											</div>
+											<a class="btn btn-sm btn-primary" href="Home1.html#" data-toggle="modal" data-target="#popup_bid">Посмотреть</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+							<div class="card__item four">
+								<div class="card_body space-y-10">
+									<!-- =============== -->
+									<div class="card_head">
+										<a href="Item-details.html">
+											<img src="assets/img/items/item_1.png" alt="item
+												img">
+										</a>
+									</div>
+									<!-- =============== -->
+			
+									<h6 class="card_title">
+										<a class="color_black" href="Item-details.html">
+											Toktorov Kurmanbek
+										</a>
+									</h6>
+									<div class="card_footer d-block space-y-10">
+										<div class="card_footer justify-content-between">
+											<div class="creators">
+												<p class="txt_sm">Python devoloper</p>
+											</div>
+											<a href="Home1.html#" class="">
+												<p class="txt_sm">
+													Geo: <span class="color_green txt_sm">Osh</span>
+												</p>
+											</a>
+										</div>
+										<div class="hr"></div>
+										<div class="d-flex
+											align-items-center
+											space-x-10
+											justify-content-between">
+											<div class="d-flex align-items-center
+												space-x-5">
+												<a href="Home1.html#" data-toggle="modal" data-target="#popup_history">
+													<p class="color_text txt_sm
+														view_history" style="width:
+														auto">
+														Devoloper
+													</p>
+												</a>
+											</div>
+											<a class="btn btn-sm btn-primary" href="Home1.html#" data-toggle="modal" data-target="#popup_bid">Посмотреть</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+							<div class="card__item four">
+								<div class="card_body space-y-10">
+									<!-- =============== -->
+									<div class="card_head">
+										<a href="Item-details.html">
+											<img src="assets/img/items/item_1.png" alt="item
+												img">
+										</a>
+									</div>
+									<!-- =============== -->
+			
+									<h6 class="card_title">
+										<a class="color_black" href="Item-details.html">
+											Toktorov Kurmanbek
+										</a>
+									</h6>
+									<div class="card_footer d-block space-y-10">
+										<div class="card_footer justify-content-between">
+											<div class="creators">
+												<p class="txt_sm">Python devoloper</p>
+											</div>
+											<a href="Home1.html#" class="">
+												<p class="txt_sm">
+													Geo: <span class="color_green txt_sm">Osh</span>
+												</p>
+											</a>
+										</div>
+										<div class="hr"></div>
+										<div class="d-flex
+											align-items-center
+											space-x-10
+											justify-content-between">
+											<div class="d-flex align-items-center
+												space-x-5">
+												<a href="Home1.html#" data-toggle="modal" data-target="#popup_history">
+													<p class="color_text txt_sm
+														view_history" style="width:
+														auto">
+														Devoloper
+													</p>
+												</a>
+											</div>
+											<a class="btn btn-sm btn-primary" href="Home1.html#" data-toggle="modal" data-target="#popup_bid">Посмотреть</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+							<div class="card__item four">
+								<div class="card_body space-y-10">
+									<!-- =============== -->
+									<div class="card_head">
+										<a href="Item-details.html">
+											<img src="assets/img/items/item_1.png" alt="item
+												img">
+										</a>
+									</div>
+									<!-- =============== -->
+			
+									<h6 class="card_title">
+										<a class="color_black" href="Item-details.html">
+											Toktorov Kurmanbek
+										</a>
+									</h6>
+									<div class="card_footer d-block space-y-10">
+										<div class="card_footer justify-content-between">
+											<div class="creators">
+												<p class="txt_sm">Python devoloper</p>
+											</div>
+											<a href="Home1.html#" class="">
+												<p class="txt_sm">
+													Geo: <span class="color_green txt_sm">Osh</span>
+												</p>
+											</a>
+										</div>
+										<div class="hr"></div>
+										<div class="d-flex
+											align-items-center
+											space-x-10
+											justify-content-between">
+											<div class="d-flex align-items-center
+												space-x-5">
+												<a href="Home1.html#" data-toggle="modal" data-target="#popup_history">
+													<p class="color_text txt_sm
+														view_history" style="width:
+														auto">
+														Devoloper
+													</p>
+												</a>
+											</div>
+											<a class="btn btn-sm btn-primary" href="Home1.html#" data-toggle="modal" data-target="#popup_bid">Посмотреть</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+							<div class="card__item four">
+								<div class="card_body space-y-10">
+									<!-- =============== -->
+									<div class="card_head">
+										<a href="Item-details.html">
+											<img src="assets/img/items/item_1.png" alt="item
+												img">
+										</a>
+									</div>
+									<!-- =============== -->
+			
+									<h6 class="card_title">
+										<a class="color_black" href="Item-details.html">
+											Toktorov Kurmanbek
+										</a>
+									</h6>
+									<div class="card_footer d-block space-y-10">
+										<div class="card_footer justify-content-between">
+											<div class="creators">
+												<p class="txt_sm">Python devoloper</p>
+											</div>
+											<a href="Home1.html#" class="">
+												<p class="txt_sm">
+													Geo: <span class="color_green txt_sm">Osh</span>
+												</p>
+											</a>
+										</div>
+										<div class="hr"></div>
+										<div class="d-flex
+											align-items-center
+											space-x-10
+											justify-content-between">
+											<div class="d-flex align-items-center
+												space-x-5">
+												<a href="Home1.html#" data-toggle="modal" data-target="#popup_history">
+													<p class="color_text txt_sm
+														view_history" style="width:
+														auto">
+														Devoloper
+													</p>
+												</a>
+											</div>
+											<a class="btn btn-sm btn-primary" href="Home1.html#" data-toggle="modal" data-target="#popup_bid">Посмотреть</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+							<div class="card__item four">
+								<div class="card_body space-y-10">
+									<!-- =============== -->
+									<div class="card_head">
+										<a href="Item-details.html">
+											<img src="assets/img/items/item_1.png" alt="item
+												img">
+										</a>
+									</div>
+									<!-- =============== -->
+			
+									<h6 class="card_title">
+										<a class="color_black" href="Item-details.html">
+											Toktorov Kurmanbek
+										</a>
+									</h6>
+									<div class="card_footer d-block space-y-10">
+										<div class="card_footer justify-content-between">
+											<div class="creators">
+												<p class="txt_sm">Python devoloper</p>
+											</div>
+											<a href="Home1.html#" class="">
+												<p class="txt_sm">
+													Geo: <span class="color_green txt_sm">Osh</span>
+												</p>
+											</a>
+										</div>
+										<div class="hr"></div>
+										<div class="d-flex
+											align-items-center
+											space-x-10
+											justify-content-between">
+											<div class="d-flex align-items-center
+												space-x-5">
+												<a href="Home1.html#" data-toggle="modal" data-target="#popup_history">
+													<p class="color_text txt_sm
+														view_history" style="width:
+														auto">
+														Devoloper
+													</p>
+												</a>
+											</div>
+											<a class="btn btn-sm btn-primary" href="Home1.html#" data-toggle="modal" data-target="#popup_bid">Посмотреть</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-2">
-							<div class="">
-								<img src="assets/img/bg/edit1.png" alt="">
-							</div>
-						</div>
-		
 					</div>
 				</div>
 			</div>
@@ -926,13 +1227,13 @@
 							</p>
 							<div>
 								<ul class="footer__social space-x-10 mb-40">
-									<li> <a href="Item-details.html"> <i class="ri-facebook-line"></i> </a>
+									<li> <a href="no_results.html"> <i class="ri-facebook-line"></i> </a>
 									</li>
-									<li> <a href="Item-details.html"> <i class="ri-messenger-line"></i> </a>
+									<li> <a href="no_results.html"> <i class="ri-messenger-line"></i> </a>
 									</li>
-									<li> <a href="Item-details.html"> <i class="ri-whatsapp-line"></i> </a>
+									<li> <a href="no_results.html"> <i class="ri-whatsapp-line"></i> </a>
 									</li>
-									<li> <a href="Item-details.html"> <i class="ri-youtube-line"></i> </a>
+									<li> <a href="no_results.html"> <i class="ri-youtube-line"></i> </a>
 									</li>
 								</ul>
 							</div>
